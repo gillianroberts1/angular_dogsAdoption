@@ -14,8 +14,8 @@ import { DogsService } from '../dogs.service';
       </li>
     </ul> 
     <div *ngIf="adoptedDog">
-    <h2>Adopted Dog</h2>
-    <img [src]="adoptedDog.imageUrl" alt="{{ adoptedDog.name }}" style="width: 230px; height: 250px;"> {{ adoptedDog.name }}
+    <h2>Adopted Dog: {{adoptedDog.name}}</h2>
+    <img [src]="adoptedDog.imageUrl" alt="{{ adoptedDog.name }}" style="width: 230px; height: 250px;">
 </div>`,
 
   styleUrl: './dogs.component.scss',
